@@ -1,0 +1,41 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    background-color:lightgrey;
+    margin: 10px;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+}
+.student-name {
+    text-align: center;
+}
+
+.main-nav {
+    display: block;
+    float: right;
+    
+}
+
+.card {
+    display: block;
+    width: 100%;
+}
+
+.main-nav li {
+    display: inline-block;
+    border: 1px red solid;
+    padding: 1em 20px;
+   
+}
+
+    
+    
+   
+
