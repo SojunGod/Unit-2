@@ -9,8 +9,11 @@ body {
 }
 
 .student-name {
-    display: block;
-    width: 110px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 2em;
 }
 
 .main-header {
@@ -35,7 +38,8 @@ body {
 }
 
 .portfolio-header {
-    margin-bottom: 4em;
+    
+    padding: 2em;
 }
 .nav a {
 
@@ -65,11 +69,22 @@ img {
     text-align: center;
     display: block;
     width: 100%;
+    padding: 2em;
 }
 
+.contact {
+    text-align: center;
 
+}
+.main-footer {
+    display: inline-block;
+}
 
-    
-    
-   
+/* .name {
+    float: left;
+    max-width: 50%;
+} */
 
+.top {
+    float: right;
+}
