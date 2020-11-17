@@ -1,39 +1,73 @@
-/* Global Layout Set-up */
+
 * { 
     box-sizing: border-box;
 }
 
 body {
-    width: 80%;
-    background-color:lightgrey;
-    margin: 10px;
+    width: 90%;
+    background-color: rgb(245, 239, 239);
 }
 
-.container {
-    width: 80%;
-    text-align: center;
-}
 .student-name {
+    display: block;
+    width: 110px;
+}
+
+.main-header {
+    display: block;
+    padding-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
 }
 
-.main-nav {
+.nav {
+    margin-top: 1.5em;
+}
+
+.nav li {
+    list-style:outside none none;
+}
+
+.portfolio {
+    text-align: center;
+    background-color: white;
+}
+
+.portfolio-header {
+    margin-bottom: 4em;
+}
+.nav a {
+
     display: block;
-    float: right;
-    
+    background-color: white;
+    color: black;
+    font-size: 1.125em;
+    font-weight: 300;
+    text-align: center;
+    padding: .4em;
+    margin: 5px 2px;
+    width: 100%;
+
+}
+
+.nav a:hover {
+    color: #0b0b0b;
+    border-bottom-color: #52bab3;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .card {
+    text-align: center;
     display: block;
     width: 100%;
 }
 
-.main-nav li {
-    display: inline-block;
-    border: 1px red solid;
-    padding: 1em 20px;
-   
-}
+
 
     
     
