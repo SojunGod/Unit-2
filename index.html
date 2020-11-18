@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
-
+<div class="wrapper">
 <body>
 		<header class="main-header">
-			<h1 class="student name">John Godfrey</h1>
+			<h1 class="name">Student Name</h1>
 			<ul class="nav">
 				<li><a href="#">home</a></li>
 				<li><a href="#">portfolio</a></li>
@@ -49,14 +49,16 @@
 				
             <div class="card" id="Photo Page">
 				<img src="images/gallery.png">
-				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
 				<h2>Photo Gallery</h2>
+				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+				
 			</div>
 				
             <div class="card" id="Calculator">
 				 <img src="images/calculator.png">
-				 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 				 <h2>Calculator</h2>
+				 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+				
             </div>
 
 		
@@ -71,12 +73,19 @@
 		<form>Phone +1 (111) 555-1234</form>
 		<form>Email email@yoursite.com</form>
 	</div> 
- 
-	
-	<div class="main-footer">
-		<h1 class="name">John Godfrey</h1>
-		<h1><a class="top" href="#">Back To Top</a></h1>
 	</div>
+	<div class="flex-container">
+
+		<div class="flex-child magenta">
+		  <h1>Student Name</h1>
+		</div>
+		
+		<div class="flex-child green">
+		  <h1><a class="top float-child" href="#">Back To Top</a></h1>
+		</div>
+		
+	  </div>
 	</footer>
 </body>
+</div> <!-- wrapper -->
 </html>

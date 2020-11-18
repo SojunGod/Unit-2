@@ -3,33 +3,57 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+padding: 0 5px 0 20px;
+}
+
 body {
     width: 90%;
     background-color: rgb(245, 239, 239);
+    margin: 0; /* removing the default body margin */
 }
 
-.student-name {
+
+.name {
     display: inline-block;
     width: 100%;
     text-align: center;
-    padding: 2em;
-    margin-bottom: 2em;
+    /* padding: 1em; */
+    
 }
 
 .main-header {
     display: block;
-    padding-top: 2em;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
 }
 
 .nav {
-    margin-top: 1.5em;
+    margin-top: .5em;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+   
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
 }
 
 .nav li {
     list-style:outside none none;
+    text-transform: uppercase;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .portfolio {
@@ -38,8 +62,8 @@ body {
 }
 
 .portfolio-header {
-    
-    padding: 2em;
+    text-transform: uppercase;
+    padding-top: 2em;
 }
 .nav a {
 
@@ -74,17 +98,42 @@ img {
 
 .contact {
     text-align: center;
-
 }
 .main-footer {
+    display: flex;
+    /* width: 50%; */
+   
+    border: 3px solid #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.main-footer {
+    display: flex;
+    width: 100%;
+    font-size: .5em;
     display: inline-block;
 }
 
-/* .name {
-    float: left;
-    max-width: 50%;
-} */
 
 .top {
-    float: right;
+    flex: 1;
+    width: 50%;
+   }
+
+   .flex-container {
+    display: flex;
+    font-size: .75em;
+    padding-top: 5px;
+    padding-left: 20px;
 }
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 100px;
+} 
+
