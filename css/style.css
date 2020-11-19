@@ -146,6 +146,29 @@ img {
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
+
+ .wrap {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+.nav {
+    margin:0;
+    padding:0;
+    text-align: center; 
+}
+
+.nav li {
+    float: left;
+    display: inline;
+    }
+  
+  a {
+    display: inline;
+    padding: 8px;
+   
+  }
+
     .float-container {
         display: flex;
         font-size: .75em;
@@ -161,5 +184,18 @@ img {
     .float-child:first-child {
         margin-right: 20px;
     } 
+
+    .intro-text {
+        float: left;
+        font-size: 3rem;
+        margin-right: 30px;
     
+    }
+
+    .profile-image {
+        float: right;
+        margin: 0;
+      
+    }
+
 }
