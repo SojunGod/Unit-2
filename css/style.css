@@ -18,20 +18,22 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-    /* padding: 1em; */
-    
+    /* padding: 1em; */ 
 }
 
-.main-header {
+.header {
     display: block;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+.intro {
+    margin: 1em 0;
 }
 
 .nav {
     margin-top: .5em;
-    position: relative;
     overflow: hidden;
-    float: left;
     width: 100%;
    
 }
@@ -44,7 +46,6 @@ ul {
 .nav li {
     list-style:outside none none;
     text-transform: uppercase;
-    position: relative;
     top: 0;
     left: 0;
     transform: none;
@@ -103,24 +104,8 @@ img {
 .contact {
     text-align: center;
     padding-bottom: 4em;
+    border-bottom: 1px black solid;
 }
-.main-footer {
-    display: flex;
-    /* width: 50%; */
-   
-    border: 3px solid #fff;
-    padding: 20px;
-    width: 100%;
-}
-
-
-.main-footer {
-    display: flex;
-    width: 100%;
-    font-size: .2em;
-    display: inline-block;
-}
-
 
 .top {
     flex: 1;
@@ -132,7 +117,6 @@ img {
     font-size: .75em;
     padding-top: 5px;
     padding-left: 20px;
-    border-top: 1px black solid;
 }
 
 .flex-child {
@@ -147,20 +131,24 @@ img {
 
 @media only screen and (min-width: 768px) {
 
+    
  .wrap {
         width: 80%;
         margin: 0 auto;
       }
 
 .nav {
-    margin:0;
-    padding:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2em;
     text-align: center; 
+    width: 40%;
 }
 
 .nav li {
-    float: left;
     display: inline;
+  
+    
     }
   
   a {
@@ -174,7 +162,6 @@ img {
         font-size: .75em;
         padding-top: 5px;
         padding-left: 20px;
-        border-top: 1px black solid;
     }
     
     .float-child {
@@ -187,15 +174,30 @@ img {
 
     .intro-text {
         float: left;
-        font-size: 3rem;
-        margin-right: 30px;
+        font-size: 1.2rem;
+        margin-right: 15px;
+        padding: 0;
+        width: 60%;
+
     
     }
 
     .profile-image {
         float: right;
-        margin: 0;
-      
+        padding: 0;
+        width: calc(40% - 15px);
     }
+
+}
+@media only screen and (min-width: 1024px) {
+
+.nav {
+   text-align: right;
+    float: right;
+}
+
+
+
+
 
 }
