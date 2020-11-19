@@ -7,85 +7,89 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
-<div class="wrapper">
-<body>
-		<header class="main-header">
-			<h1 class="name">Student Name</h1>
-			<ul class="nav">
-				<li><a href="#">home</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">contact</a></li>
-			</ul>
-			<img src="images/responsive-layout-profile.png" alt="profile" class="profile-image">
-         	<p>Hi! I'm a frontend developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>    
-		</header>
-	
-		<div class="portfolio">
-			<h2 class="portfolio-header">Portfolio</h2>
-				
-            <div class="card" id="Marketing Page">
-				<img src="images/marketing.png">
-				<h2>Marketing Page</h2>
-				<p>This project shows the frontpage of a marketing website meant for a specific business I am interested in. </p>
-			</div>
-				
-			<div class="card" id="Search Page">
-				<img src="images/search.png">
-				<h2>Search Page</h2>
-				<p>This project searches through a specific database to find information that the user is trying to look up.</p>
-			</div>
-				
-            <div class="card" id="Travel Page">
-				<img src="images/travel.png" alt="image of places author has traveled to" class="travel-image">
-				<h2>Travel App</h2>
-				<p>This project compares travel times based on different transportation methods and tells you the best one. </p>
-			</div>
-				
-             <div class="card" id="Map Page">
-				<img src="images/map.png" alt="map" class="map-image">
-				<h2>Map of Favorite Spots</h2>
-				<p>This project uses mapping apps to plot points for my favorite spots in the city for a do-it yourself walking tour.</p>
-			</div>
-				
-            <div class="card" id="Photo Page">
-				<img src="images/gallery.png">
-				<h2>Photo Gallery</h2>
-				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-				
-			</div>
-				
-            <div class="card" id="Calculator">
-				 <img src="images/calculator.png">
-				 <h2>Calculator</h2>
-				 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-				
-            </div>
 
+<div class="wrapper">
+	<body>
+			<header class="main-header">
+				<h1 class="name">Student Name</h1>
+				<ul class="nav">
+					<li><a href="#">home</a></li>
+					<li><a href="#">portfolio</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+				<img src="images/responsive-layout-profile.png" alt="profile" class="profile-image">
+				<p>Hi! I'm a frontend developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>    
+			</header>
 		
-		</div> <!-- portfolio -->
+			<div class="portfolio">
+				<h2 class="portfolio-header">Portfolio</h2>
+				<div class="float-container">	
+					<div class="card" id="Marketing Page">
+						<img src="images/marketing.png">
+						<h2>Marketing Page</h2>
+						<p>This project shows the frontpage of a marketing website meant for a specific business I am interested in. </p>
+					</div>
+				
+					
+					<div class="card" id="Search Page">
+						<img src="images/search.png">
+						<h2>Search Page</h2>
+						<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+					</div>
+				</div>
+				
+				<div class="float-container">
+					<div class="card" id="Travel Page">
+						<img src="images/travel.png" alt="image of places author has traveled to" class="travel-image">
+						<h2>Travel App</h2>
+						<p>This project compares travel times based on different transportation methods and tells you the best one. </p>
+					</div>
+						
+					<div class="card" id="Map Page">
+						<img src="images/map.png" alt="map" class="map-image">
+						<h2>Map of Favorite Spots</h2>
+						<p>This project uses mapping apps to plot points for my favorite spots in the city for a do-it yourself walking tour.</p>
+					</div>
+				</div>	
+
+				<div class="float-container">
+					<div class="card" id="Photo Page">
+						<img src="images/gallery.png">
+						<h2>Photo Gallery</h2>
+						<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+						
+					</div>
+						
+					<div class="card" id="Calculator">
+						<img src="images/calculator.png">
+						<h2>Calculator</h2>
+						<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+						
+					</div>
+				</div>
+
+			
+			</div> <!-- portfolio -->
+				
 			
 		
-	
-	<footer>
-	<div class="contact">
-		<h1>CONTACT</h1>
-		<p>If you're interested in chatting or want more information about what I'm working on, I'd love to hear from you!</p>
-		<form>Phone +1 (111) 555-1234</form>
-		<form>Email email@yoursite.com</form>
-	</div> 
-	</div>
-	<div class="flex-container">
-
-		<div class="flex-child magenta">
-		  <h1>Student Name</h1>
-		</div>
-		
-		<div class="flex-child green">
-		  <h1><a class="top float-child" href="#">Back To Top</a></h1>
-		</div>
-		
-	  </div>
-	</footer>
-</body>
+		<footer>
+			<div class="contact">
+				<h1>CONTACT</h1>
+				<p>If you're interested in chatting or want more information about what I'm working on, I'd love to hear from you!</p>
+				<form>Phone +1 (111) 555-1234</form>
+				<form>Email email@yoursite.com</form>
+			</div> <!-- contact -->
+			<div class="flex-container">
+				<div class="flex-child magenta">
+				<h1>Student Name</h1>
+				</div>
+				
+				<div class="flex-child green">
+				<h1><a class="top float-child" href="#">Back To Top</a></h1>
+				</div>
+			</div> <!-- flex container -->
+		</footer>
+	</body>
 </div> <!-- wrapper -->
 </html>

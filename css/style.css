@@ -84,7 +84,6 @@ a:link {
 
 img {
     margin: 0;
-    position: relative;
     text-align: center;
     max-width: 100%;
     display: block;
@@ -128,7 +127,7 @@ img {
     width: 50%;
    }
 
-   .flex-container {
+.flex-container {
     display: flex;
     font-size: .75em;
     padding-top: 5px;
@@ -146,3 +145,21 @@ img {
 
 /* Media Queries */
 
+@media only screen and (min-width: 768px) {
+    .float-container {
+        display: flex;
+        font-size: .75em;
+        padding-top: 5px;
+        padding-left: 20px;
+        border-top: 1px black solid;
+    }
+    
+    .float-child {
+        flex: 1;
+    }  
+    
+    .float-child:first-child {
+        margin-right: 20px;
+    } 
+    
+}
