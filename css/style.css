@@ -10,7 +10,7 @@ padding: 0 0 0 25px;
 body {
     width: 90%;
     background-color: rgb(245, 245, 245);
-    margin: 0, 5%; /* removing the default body margin */
+    margin: 0, 5%; 
 }
 
 
@@ -18,7 +18,7 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-    /* padding: 1em; */ 
+    margin: 1em;
 }
 
 .header {
@@ -29,12 +29,14 @@ body {
 
 .intro {
     margin: 1em 0;
+    clear: both;
 }
 
 .nav {
     margin-top: .5em;
     overflow: hidden;
     width: 100%;
+    
    
 }
 
@@ -119,6 +121,7 @@ img {
     padding-left: 20px;
 }
 
+
 .flex-child {
     flex: 1;
 }  
@@ -131,26 +134,34 @@ img {
 
 @media only screen and (min-width: 768px) {
 
-.siteHeader {
-    position: fixed;
-    top: 0;
+
+body {
+    position: relative;
 }
-    
- .wrap {
-        width: 80%;
-        margin: 0 auto;
-      }
+
+
+.siteHeader {
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    margin-left: 0;
+  
+}
 
 .nav {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline;
     margin-bottom:2em;
-    text-align: center; 
-    width: 40%;
+    width: 60%;
+    
 }
 
 .nav li {
     display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     }
   
   a {
@@ -159,11 +170,30 @@ img {
    
   }
 
+  
+
+  
+  li {
+    float: left;
+   
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
     .float-container {
         display: flex;
+        flex-direction: row;
         font-size: .75em;
         padding-top: 5px;
         padding-left: 20px;
+        margin: 1em;
     }
     
     .float-child {
@@ -175,25 +205,28 @@ img {
     } 
 
     .intro {
-        margin-top: 1em;
-        margin-bottom: 1em;
+        display: block;
+        margin-top:100px;
     }
     .intro-text {
+        display: block;
         float: left;
         font-size: 1.2rem;
         margin-right: 15px;
         padding: 0;
         width: 60%;
-
-    
     }
 
     .profile-image {
         float: right;
         padding: 0;
         width: calc(40% - 15px);
+        margin: 1em 0;
     }
 
+    .portfolio {
+        clear: both;
+    }
 }
 @media only screen and (min-width: 1024px) {
 
