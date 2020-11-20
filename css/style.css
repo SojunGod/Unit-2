@@ -10,7 +10,6 @@ padding: 0 0 0 25px;
 body {
     width: 90%;
     background-color: rgb(245, 245, 245);
-    margin: 0, 5%; 
 }
 
 
@@ -18,7 +17,8 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .header {
@@ -27,17 +27,10 @@ body {
     margin-bottom: 1em;
 }
 
-.intro {
-    margin: 1em 0;
-    clear: both;
-}
-
 .nav {
     margin-top: .5em;
     overflow: hidden;
     width: 100%;
-    
-   
 }
 
 ul {
@@ -57,6 +50,31 @@ a:link {
     text-decoration: none;
 }
 
+.nav a {
+
+    display: block;
+    background-color: white;
+    color: black;
+    font-size: 1.75em;
+    font-weight: 300;
+    text-align: center; */
+    padding: .4em;
+    margin: 5px 2px;
+    width: 100%;
+ 
+
+}
+
+.nav a:hover {
+    color: #0b0b0b;
+    border-bottom-color: #52bab3;
+}
+
+.intro {
+    margin: 1em 0;
+    clear: both;
+}
+
 .portfolio {
     text-align: center;
     background-color: white;
@@ -66,24 +84,7 @@ a:link {
     text-transform: uppercase;
     padding-top: 2em;
 }
-.nav a {
 
-    display: block;
-    background-color: white;
-    color: black;
-    font-size: 1.125em;
-    font-weight: 300;
-    text-align: center;
-    padding: .4em;
-    margin: 5px 2px;
-    width: 100%;
-
-}
-
-.nav a:hover {
-    color: #0b0b0b;
-    border-bottom-color: #52bab3;
-}
 
 img {
     margin: 0;
@@ -112,6 +113,7 @@ img {
 .top {
     flex: 1;
     width: 50%;
+    position: absolute;
    }
 
 .flex-container {
@@ -130,14 +132,20 @@ img {
     margin-right: 120px;
 } 
 
+.bottom {
+    float: left;
+    width: 80%;
+}
+
+.top {
+    float: right;
+    padding-right: 48px;
+    text-align: right;
+  }
+
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
-
-
-body {
-    position: relative;
-}
 
 
 .siteHeader {
@@ -146,46 +154,33 @@ body {
     top: 0;
     left: 30%;
     margin-left: 0;
+    margin-right: 0;
   
 }
 
 .nav {
-    display: inline;
-    margin-bottom:2em;
-    width: 60%;
-    
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom:4em;
+    margin-right: 0;
+    padding-right: 0;
+    border: 1px red solid;
+    text-align: center;
+    width: 100%;
 }
 
-.nav li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.nav a {
+    margin: 0 5px 0 5px;
     }
-  
-  a {
-    display: inline;
-    padding: 8px;
-   
-  }
 
-  
-
-  
   li {
     float: left;
-   
-  }
-  
-  li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
   }
 
+  .siteHeader {
+    padding-bottom: 10px;  
+    margin-bottom: 10px;
+  }
 
     .float-container {
         display: flex;
@@ -227,6 +222,17 @@ body {
     .portfolio {
         clear: both;
     }
+    
+    .bottom {
+        float: left;
+        width: 80%;
+        padding-right: 0;
+    }
+    .top {
+      float: right;
+      padding-right: 48px;
+      text-align: right;
+    }
 }
 @media only screen and (min-width: 1024px) {
 
@@ -235,3 +241,13 @@ body {
 
 
 }
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+clearfix
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
