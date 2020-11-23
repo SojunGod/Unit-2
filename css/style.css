@@ -145,7 +145,7 @@ img {
 
 /* Media Queries */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
 
 
 .siteHeader {
@@ -159,12 +159,10 @@ img {
 }
 
 .nav {
-    display: inline-block;
     margin-top: 1em;
     margin-bottom:4em;
     margin-right: 0;
     padding-right: 0;
-    border: 1px red solid;
     text-align: center;
     width: 100%;
 }
@@ -204,7 +202,6 @@ img {
         margin-top:100px;
     }
     .intro-text {
-        display: block;
         float: left;
         font-size: 1.2rem;
         margin-right: 15px;
@@ -236,7 +233,13 @@ img {
 }
 @media only screen and (min-width: 1024px) {
 
-
+colgroup {
+    display: flex;
+    flex:1 0 100%;
+    justify-content:center;
+    border: 1px red solid;
+    flex-direction: row;
+}
 
 
 
