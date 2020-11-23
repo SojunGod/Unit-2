@@ -12,18 +12,17 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
+.header {
+    display: flex;
+    text-align: center;
+    margin-bottom: 1em;
+}
 
 .name {
     display: inline-block;
     width: 100%;
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.header {
-    display: block;
-    text-align: center;
     margin-bottom: 1em;
 }
 
@@ -157,11 +156,9 @@ img {
 
 .siteHeader {
     display: flex;
-    margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 10px;  
-    margin-bottom: 10px;
+    padding-bottom: 5px;  
     width: 100%;
 }
 
@@ -184,7 +181,7 @@ img {
 }
 
 .nav a {
-    margin: 0 5px 0 5px;
+    margin: 0;
     }
 
   li {
@@ -217,7 +214,7 @@ img {
 
     .intro-text {
         float: left;
-        font-size: 1em;
+        font-size: .80em;
         margin-right: 15px;
         padding: 0;
         width: 60%;
@@ -258,24 +255,24 @@ img {
 
     .siteHeader {
         display: flex;
-        margin-bottom: 20px;
         margin-left: 0;
         margin-right: 0;
-        padding-bottom: 10px;  
-        margin-bottom: 10px;
         width: 100%;
+        
     }
 
     .name {
         float: left;
         width: 40%;
         clear: both;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .nav {
         float: right;
         text-align: right;
-        width: 70%;
+        width: 60%;
         clear: both;
     }
     
