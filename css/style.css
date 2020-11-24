@@ -233,7 +233,6 @@ img {
 
     .top {
         display: none;
-        z-index: 1;
       }
 
       .bottom {
@@ -242,12 +241,19 @@ img {
         align-items: flex-end;
       }
       .magenta, .orange {
+        display: flex;
         width: unset;
-        z-index: 2;
       }
     
+    .orange {
+        margin-left: 12rem;
+        line-height: normal;
+    }
     .orange a {
-        margin: 0 5px 0 5px;
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+        align-items: flex-end;
         }
     
 
@@ -334,7 +340,8 @@ margin: 0;
 display: flex;
 flex: 1;
 align-items: flex-end;
-margin-left: 20em;
+margin-left: 20rem;
+line-height: 1em;
     }
 
 .orange a {
