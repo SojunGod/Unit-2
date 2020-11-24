@@ -233,6 +233,7 @@ img {
 
     .top {
         display: none;
+        z-index: 1;
       }
 
       .bottom {
@@ -242,37 +243,14 @@ img {
       }
       .magenta, .orange {
         width: unset;
+        z-index: 2;
       }
     
     .orange a {
         margin: 0 5px 0 5px;
         }
     
-      /* li {
-        float: left;
-      } */
 
-      /* .bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .magenta, .orange {
-        width: unset;
-      }
-
-    .orange {
-        display: flex;
-        flex: 1;
-        align-items: flex-end;
-          }
-
-    .orange a {
-    list-style: none;
-    display: inline-block;
-    margin-left: 10px;
-    align-items: flex-end;
-    }  */
 }
 @media only screen and (min-width: 1024px) {
  
