@@ -16,7 +16,9 @@ body h1, h2 {
     font-family: 'Big Shoulders Inline Text', cursive;
 }
 
-
+.siteHeader {
+    background-image: src="images/trees.jpg";
+}
 .name {
     display: inline-block;
     width: 100%;
@@ -25,7 +27,7 @@ body h1, h2 {
     margin-bottom: 1em;
 }
 
-.nav {
+.main-nav {
     margin-top: .5em;
     clear: both;
     width: 100%;
@@ -36,7 +38,7 @@ ul {
     list-style-type: none;
 }
 
-.nav li {
+.main-nav li {
     list-style:outside none none;
     text-transform: uppercase;
     top: 0;
@@ -48,7 +50,7 @@ a:link {
     text-decoration: none;
 }
 
-.nav a {
+.main-nav a {
 
     display: block;
     background-color: white;
@@ -63,7 +65,7 @@ a:link {
 
 }
 
-.nav a:hover {
+.main-nav a:hover {
     color: #0b0b0b;
     border-bottom-color: #52bab3;
 }
@@ -169,11 +171,11 @@ img {
     margin-bottom: 1em;
 }
 
-.nav {
+.main-nav {
   text-align: center;
 }
 
-.nav a {
+.main-nav a {
     margin: 0 5px 0 5px;
     }
 
@@ -266,11 +268,11 @@ img {
         justify-content: space-between;
         align-items: center;
       }
-      .name, .nav {
+      .name, .main-nav {
         width: unset;
       }
     
-    .nav a {
+    .main-nav a {
         margin: 0 5px 0 5px;
         }
     
