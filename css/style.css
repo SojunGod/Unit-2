@@ -9,6 +9,7 @@ padding: 0 0 0 25px;
 
 body {
     width: 90%;
+    /* background-image: url("images/trees.jpg"); */
     background-color: rgb(245, 245, 245)
 }
 
@@ -17,20 +18,24 @@ body h1, h2 {
 }
 
 .siteHeader {
-    background-image: src="images/trees.jpg";
+    background-color: #52bab3;
 }
 .name {
     display: inline-block;
     width: 100%;
     text-align: center;
+    color: wheat;
     margin-top: 1em;
     margin-bottom: 1em;
+    padding-left: 1em;
+    font-size: 4em;
 }
 
 .main-nav {
     margin-top: .5em;
     clear: both;
     width: 100%;
+
 }
 
 ul {
@@ -53,14 +58,13 @@ a:link {
 .main-nav a {
 
     display: block;
-    background-color: white;
+    background-color: wheat;
     color: black;
-    font-size: 1.75em;
     font-weight: 300;
     text-align: center; 
-    padding: .4em;
-    margin: 5px 2px;
-    width: 100%;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 10px;
  
 
 }
@@ -176,12 +180,13 @@ img {
 }
 
 .main-nav a {
-    margin: 0 5px 0 5px;
+    margin: 0 5px;
+    width: 90%;
     }
 
   li {
     display: inline-block;
-    padding: 0;
+    padding: 2px;
   }
 
 
@@ -265,19 +270,25 @@ img {
  
     .siteHeader {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
       }
       .name, .main-nav {
         width: unset;
+        margin-right: 20px;
       }
     
     .main-nav a {
-        margin: 0 5px 0 5px;
+        margin: 3px 5px;
+        margin-bottom: 1em;
+        margin-right: 3em;
         }
     
       li {
         float: left;
+        padding-left: 5px;
+        font-size-adjust: unset;
+        text-align: flex-end;
       }
 
       .intro {
