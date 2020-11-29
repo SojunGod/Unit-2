@@ -3,14 +3,14 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-padding: 0 0 0 25px;
-}
 
 body {
-    width: 90%;
-    /* background-image: url("images/trees.jpg"); */
-    background-color: rgb(245, 245, 245)
+    background-color: rgb(245, 245, 245);
+    width : 99%; /* @mobile and tablet */
+    max-width: 1200px; /*@desk top once pass 1024px*/
+    padding: 0 1em; /*@mobile & tablet a little breathing space on sides*/
+    margin: 0 auto; /*centers everything nicely no
+                                matter the viewport size.*/
 }
 
 body h1, h2 {
@@ -46,6 +46,7 @@ ul {
 .main-nav li {
     list-style:outside none none;
     text-transform: uppercase;
+    Font-size: 1.5em;
     top: 0;
     left: 0;
     transform: none;
@@ -62,7 +63,7 @@ a:link {
     color: black;
     font-weight: 300;
     text-align: center; 
-    padding: 5px;
+    padding: 1em;
     margin: 4px;
     border-radius: 10px;
  
